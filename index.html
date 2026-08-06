@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neuroflow — AI Automation Agency for Modern Teams</title>
+    <meta
+      name="description"
+      content="We design, build and operate AI agents and workflow automation that cut manual work by up to 90%. Live in 14 days."
+    />
+    <meta property="og:title" content="Neuroflow — AI Automation Agency for Modern Teams" />
+    <meta
+      property="og:description"
+      content="We design, build and operate AI agents and workflow automation that cut manual work by up to 90%. Live in 14 days."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
+              display: ['"Sora"', '"Plus Jakarta Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            borderRadius: {
+              "3xl": "1.75rem",
+            },
+            maxWidth: {
+              "7xl": "80rem",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="relative min-h-screen overflow-x-hidden">
+    <!-- ========== NAV ========== -->
+    <header class="fixed inset-x-0 top-0 z-50 px-4 pt-3 sm:pt-4">
+      <nav
+        id="main-nav"
+        class="nav-enter mx-auto flex max-w-7xl items-center gap-4 rounded-3xl border border-transparent px-4 py-3 transition-all duration-500 sm:px-6"
+      >
+        <a href="#top" class="flex items-center gap-2.5 font-bold tracking-tight">
+          <span
+            class="bg-brand flex size-9 items-center justify-center rounded-2xl text-sm font-black text-primary-foreground shadow-glow"
+            >N</span
+          >
+          <span class="text-lg">Neuro<span class="text-gradient">flow</span></span>
+        </a>
+
+        <div class="mx-auto hidden items-center gap-1 lg:flex">
+          <a href="#solutions" class="rounded-full px-3 py-2 text-sm font-medium text-muted-foreground transition hover:bg-secondary/60 hover:text-foreground">Solutions</a>
+          <a href="#services" class="rounded-full px-3 py-2 text-sm font-medium text-muted-foreground transition hover:bg-secondary/60 hover:text-foreground">Services</a>
+          <a href="#pricing" class="rounded-full px-3 py-2 text-sm font-medium text-muted-foreground transition hover:bg-secondary/60 hover:text-foreground">Pricing</a>
+          <a href="#workflow" class="rounded-full px-3 py-2 text-sm font-medium text-muted-foreground transition hover:bg-secondary/60 hover:text-foreground">Industries</a>
+          <a href="#case-studies" class="rounded-full px-3 py-2 text-sm font-medium text-muted-foreground transition hover:bg-secondary/60 hover:text-foreground">Case Studies</a>
+          <a href="#about" class="rounded-full px-3 py-2 text-sm font-medium text-muted-foreground transition hover:bg-secondary/60 hover:text-foreground">About</a>
+          <a href="#blog" class="rounded-full px-3 py-2 text-sm font-medium text-muted-foreground transition hover:bg-secondary/60 hover:text-foreground">Blog</a>
+          <a href="#contact" class="rounded-full px-3 py-2 text-sm font-medium text-muted-foreground transition hover:bg-secondary/60 hover:text-foreground">Contact</a>
+        </div>
+
+        <div class="ml-auto flex items-center gap-2 xl:ml-0">
+          <button
+            type="button"
+            id="theme-toggle"
+            aria-label="Toggle color theme"
+            class="glass flex size-10 items-center justify-center rounded-full text-foreground/80 transition hover:text-foreground"
+          >
+            <i data-lucide="moon" class="theme-icon-moon size-4"></i>
+            <i data-lucide="sun" class="theme-icon-sun size-4"></i>
+          </button>
+          <a href="#demo" class="btn btn-ghost btn-sm hidden rounded-full lg:inline-flex">
+            <i data-lucide="play-circle" class="size-4"></i> Watch Demo
+          </a>
+          <a href="#contact" class="btn btn-hero btn-sm hidden sm:inline-flex">Book Free Consultation</a>
+          <button
+            type="button"
+            id="menu-toggle"
+            aria-label="Toggle menu"
+            class="glass flex size-10 items-center justify-center rounded-full lg:hidden"
+          >
+            <i data-lucide="menu" id="menu-icon-open" class="size-4"></i>
+            <i data-lucide="x" id="menu-icon-close" class="size-4 hidden"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div id="mobile-menu" class="mobile-menu glass mx-auto mt-2 max-w-7xl grid-cols-2 gap-1 rounded-3xl p-3 lg:hidden">
+        <a href="#solutions" class="rounded-2xl px-4 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/60 hover:text-foreground">Solutions</a>
+        <a href="#services" class="rounded-2xl px-4 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/60 hover:text-foreground">Services</a>
+        <a href="#pricing" class="rounded-2xl px-4 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/60 hover:text-foreground">Pricing</a>
+        <a href="#workflow" class="rounded-2xl px-4 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/60 hover:text-foreground">Industries</a>
+        <a href="#case-studies" class="rounded-2xl px-4 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/60 hover:text-foreground">Case Studies</a>
+        <a href="#about" class="rounded-2xl px-4 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/60 hover:text-foreground">About</a>
+        <a href="#blog" class="rounded-2xl px-4 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/60 hover:text-foreground">Blog</a>
+        <a href="#contact" class="rounded-2xl px-4 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/60 hover:text-foreground">Contact</a>
+        <a href="#contact" class="btn btn-hero col-span-2 mt-1">Book Free Consultation</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- ========== HERO ========== -->
+      <section id="top" class="bg-aura relative overflow-hidden pt-36 pb-16 sm:pt-44 sm:pb-24">
+        <div id="particles" class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true"></div>
+        <div
+          aria-hidden="true"
+          class="animate-pulse-glow bg-brand pointer-events-none absolute top-[-18rem] left-1/2 size-[46rem] -translate-x-1/2 rounded-full opacity-[0.18] blur-[150px]"
+        ></div>
+        <div class="relative mx-auto max-w-7xl px-5">
+          <div class="hero-enter mx-auto max-w-4xl text-center">
+            <span class="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold tracking-wide">
+              <i data-lucide="brain-circuit" class="size-3.5 text-primary"></i>
+              Enterprise AI Automation · 2026
+            </span>
+
+            <h1 class="mt-7 text-5xl leading-[0.98] font-bold tracking-tight text-balance sm:text-7xl">
+              The Future of Business Automation Starts with
+              <span class="text-gradient">AI</span>
+            </h1>
+
+            <p class="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground text-pretty sm:text-xl">
+              From AI Chatbots to Autonomous AI Agents, we help businesses automate operations, delight customers, and
+              unlock measurable growth.
+            </p>
+
+            <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
+              <a href="#contact" class="btn btn-hero btn-lg">
+                Book Free AI Consultation <i data-lucide="arrow-right" class="size-4"></i>
+              </a>
+              <a href="#demo" class="btn btn-glass btn-lg">
+                <i data-lucide="play-circle" class="size-4"></i> View Live Demo
+              </a>
+            </div>
+
+            <div class="mt-9 flex flex-wrap items-center justify-center gap-2.5">
+              <span class="hero-chip glass-soft flex items-center gap-2 rounded-full px-3.5 py-2 text-sm font-medium" style="--reveal-delay: 0.3s">
+                <i data-lucide="check" class="size-3.5 text-primary"></i>
+                <i data-lucide="message-square" class="size-3.5 text-muted-foreground"></i>
+                AI Chatbot
+              </span>
+              <span class="hero-chip glass-soft flex items-center gap-2 rounded-full px-3.5 py-2 text-sm font-medium" style="--reveal-delay: 0.37s">
+                <i data-lucide="check" class="size-3.5 text-primary"></i>
+                <i data-lucide="bot" class="size-3.5 text-muted-foreground"></i>
+                AI Agents
+              </span>
+              <span class="hero-chip glass-soft flex items-center gap-2 rounded-full px-3.5 py-2 text-sm font-medium" style="--reveal-delay: 0.44s">
+                <i data-lucide="check" class="size-3.5 text-primary"></i>
+                <i data-lucide="workflow" class="size-3.5 text-muted-foreground"></i>
+                Workflow Automation
+              </span>
+              <span class="hero-chip glass-soft flex items-center gap-2 rounded-full px-3.5 py-2 text-sm font-medium" style="--reveal-delay: 0.51s">
+                <i data-lucide="check" class="size-3.5 text-primary"></i>
+                <i data-lucide="file-text" class="size-3.5 text-muted-foreground"></i>
+                Document AI
+              </span>
+              <span class="hero-chip glass-soft flex items-center gap-2 rounded-full px-3.5 py-2 text-sm font-medium" style="--reveal-delay: 0.58s">
+                <i data-lucide="check" class="size-3.5 text-primary"></i>
+                <i data-lucide="audio-lines" class="size-3.5 text-muted-foreground"></i>
+                Voice AI
+              </span>
+              <span class="hero-chip glass-soft flex items-center gap-2 rounded-full px-3.5 py-2 text-sm font-medium" style="--reveal-delay: 0.65s">
+                <i data-lucide="check" class="size-3.5 text-primary"></i>
+                <i data-lucide="line-chart" class="size-3.5 text-muted-foreground"></i>
+                AI Analytics
+              </span>
+            </div>
+          </div>
+
+          <div id="hero-visual" class="hero-stats-enter mt-14 flex flex-wrap items-center justify-center gap-3 sm:gap-4 will-change-transform">
+            <div class="glass flex items-center gap-2 rounded-2xl px-4 py-2.5 text-sm font-semibold">
+              <i data-lucide="bot" class="size-4 text-primary"></i>
+              128 agents running
+            </div>
+            <div class="glass flex items-center gap-2 rounded-2xl px-4 py-2.5 text-sm font-semibold">
+              <i data-lucide="audio-lines" class="size-4 text-cyan"></i>
+              Voice AI · live
+            </div>
+            <div class="glass flex items-center gap-2 rounded-2xl px-4 py-2.5 text-sm font-semibold">
+              <i data-lucide="line-chart" class="size-4 text-accent"></i>
+              +38% conversion
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== TRUST / ABOUT ========== -->
+      <section id="about" class="relative py-20">
+        <div class="mx-auto max-w-7xl px-5">
+          <p class="reveal text-center text-sm font-semibold tracking-[0.2em] uppercase text-muted-foreground">
+            Trusted by Modern Businesses
+          </p>
+
+          <div class="relative mt-8 overflow-hidden marquee-mask">
+            <div class="animate-marquee flex w-max gap-14">
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">NORTHWIND</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">ACME CLOUD</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">VERTEXA</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">LUMEN LABS</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">HELIOSOFT</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">QUANTA</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">ORBITAL</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">MERIDIAN</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">NORTHWIND</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">ACME CLOUD</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">VERTEXA</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">LUMEN LABS</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">HELIOSOFT</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">QUANTA</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">ORBITAL</span>
+              <span class="text-lg font-bold tracking-tight text-muted-foreground/60">MERIDIAN</span>
+            </div>
+          </div>
+
+          <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="reveal" style="--reveal-delay: 0s">
+              <div class="glass gradient-ring rounded-3xl p-7 text-center">
+                <div class="text-4xl font-bold tracking-tight">
+                  <span class="text-gradient" data-counter data-to="500" data-suffix="+">0+</span>
+                </div>
+                <p class="mt-2 text-sm font-medium text-muted-foreground">Projects Delivered</p>
+              </div>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.08s">
+              <div class="glass gradient-ring rounded-3xl p-7 text-center">
+                <div class="text-4xl font-bold tracking-tight">
+                  <span class="text-gradient" data-counter data-to="50" data-suffix="+">0+</span>
+                </div>
+                <p class="mt-2 text-sm font-medium text-muted-foreground">Enterprise Clients</p>
+              </div>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.16s">
+              <div class="glass gradient-ring rounded-3xl p-7 text-center">
+                <div class="text-4xl font-bold tracking-tight">
+                  <span class="text-gradient" data-counter data-to="99" data-suffix="%">0%</span>
+                </div>
+                <p class="mt-2 text-sm font-medium text-muted-foreground">Customer Satisfaction</p>
+              </div>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.24s">
+              <div class="glass gradient-ring rounded-3xl p-7 text-center">
+                <div class="text-4xl font-bold tracking-tight">
+                  <span class="text-gradient" data-counter data-to="24" data-suffix="/7">0/7</span>
+                </div>
+                <p class="mt-2 text-sm font-medium text-muted-foreground">Support Coverage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SERVICES ========== -->
+      <section id="services" class="relative py-24">
+        <div class="mx-auto max-w-7xl px-5">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="reveal">
+              <span class="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-muted-foreground">
+                <span class="size-1.5 rounded-full bg-brand"></span>
+                Services
+              </span>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.05s">
+              <h2 class="mt-5 text-4xl leading-[1.05] font-bold tracking-tight text-balance sm:text-5xl">
+                Everything you need to run an <span class="text-gradient">AI-native</span> company
+              </h2>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.1s">
+              <p class="mt-4 text-lg text-muted-foreground text-pretty">
+                Modular AI building blocks, deployed on your infrastructure and integrated with the systems you already use.
+              </p>
+            </div>
+          </div>
+
+          <div id="solutions" class="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <div class="reveal" style="--reveal-delay: 0s">
+              <article class="glass gradient-ring group relative h-full overflow-hidden rounded-3xl p-7 lift">
+                <div aria-hidden="true" class="service-tint pointer-events-none absolute -top-24 -right-16 size-56 rounded-full bg-gradient-to-br from-violet-500/30 to-transparent blur-2xl"></div>
+                <div class="bg-brand service-icon relative flex size-14 items-center justify-center rounded-2xl shadow-glow">
+                  <i data-lucide="message-square" class="size-6 text-primary-foreground"></i>
+                </div>
+                <h3 class="relative mt-6 text-xl font-bold tracking-tight">AI Chatbots</h3>
+                <p class="relative mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Build intelligent customer support bots that resolve tickets instantly, in any language.
+                </p>
+              </article>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.07s">
+              <article class="glass gradient-ring group relative h-full overflow-hidden rounded-3xl p-7 lift">
+                <div aria-hidden="true" class="service-tint pointer-events-none absolute -top-24 -right-16 size-56 rounded-full bg-gradient-to-br from-fuchsia-500/30 to-transparent blur-2xl"></div>
+                <div class="bg-brand service-icon relative flex size-14 items-center justify-center rounded-2xl shadow-glow">
+                  <i data-lucide="bot" class="size-6 text-primary-foreground"></i>
+                </div>
+                <h3 class="relative mt-6 text-xl font-bold tracking-tight">AI Agents</h3>
+                <p class="relative mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Autonomous AI agents that execute multi-step business operations end to end.
+                </p>
+              </article>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.14s">
+              <article class="glass gradient-ring group relative h-full overflow-hidden rounded-3xl p-7 lift">
+                <div aria-hidden="true" class="service-tint pointer-events-none absolute -top-24 -right-16 size-56 rounded-full bg-gradient-to-br from-amber-400/30 to-transparent blur-2xl"></div>
+                <div class="bg-brand service-icon relative flex size-14 items-center justify-center rounded-2xl shadow-glow">
+                  <i data-lucide="workflow" class="size-6 text-primary-foreground"></i>
+                </div>
+                <h3 class="relative mt-6 text-xl font-bold tracking-tight">Workflow Automation</h3>
+                <p class="relative mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Automate repetitive manual work across your entire tool stack with zero glue code.
+                </p>
+              </article>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.21s">
+              <article class="glass gradient-ring group relative h-full overflow-hidden rounded-3xl p-7 lift">
+                <div aria-hidden="true" class="service-tint pointer-events-none absolute -top-24 -right-16 size-56 rounded-full bg-gradient-to-br from-violet-500/30 to-fuchsia-500/0 blur-2xl"></div>
+                <div class="bg-brand service-icon relative flex size-14 items-center justify-center rounded-2xl shadow-glow">
+                  <i data-lucide="file-text" class="size-6 text-primary-foreground"></i>
+                </div>
+                <h3 class="relative mt-6 text-xl font-bold tracking-tight">Document AI</h3>
+                <p class="relative mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Extract, classify and process contracts, invoices and forms at enterprise scale.
+                </p>
+              </article>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.28s">
+              <article class="glass gradient-ring group relative h-full overflow-hidden rounded-3xl p-7 lift">
+                <div aria-hidden="true" class="service-tint pointer-events-none absolute -top-24 -right-16 size-56 rounded-full bg-gradient-to-br from-amber-400/30 to-violet-500/0 blur-2xl"></div>
+                <div class="bg-brand service-icon relative flex size-14 items-center justify-center rounded-2xl shadow-glow">
+                  <i data-lucide="audio-lines" class="size-6 text-primary-foreground"></i>
+                </div>
+                <h3 class="relative mt-6 text-xl font-bold tracking-tight">Voice AI</h3>
+                <p class="relative mt-2 text-sm leading-relaxed text-muted-foreground">
+                  AI calling agents and voice assistants that sound human and never sleep.
+                </p>
+              </article>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.35s">
+              <article class="glass gradient-ring group relative h-full overflow-hidden rounded-3xl p-7 lift">
+                <div aria-hidden="true" class="service-tint pointer-events-none absolute -top-24 -right-16 size-56 rounded-full bg-gradient-to-br from-fuchsia-500/30 to-amber-400/0 blur-2xl"></div>
+                <div class="bg-brand service-icon relative flex size-14 items-center justify-center rounded-2xl shadow-glow">
+                  <i data-lucide="line-chart" class="size-6 text-primary-foreground"></i>
+                </div>
+                <h3 class="relative mt-6 text-xl font-bold tracking-tight">AI Analytics</h3>
+                <p class="relative mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Business intelligence powered by AI, with forecasts and answers in plain English.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== WHY US ========== -->
+      <section class="relative py-24">
+        <div
+          aria-hidden="true"
+          class="bg-brand pointer-events-none absolute top-1/4 left-1/2 size-[38rem] -translate-x-1/2 rounded-full opacity-[0.12] blur-[130px]"
+        ></div>
+        <div class="relative mx-auto max-w-7xl px-5">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="reveal">
+              <span class="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-muted-foreground">
+                <span class="size-1.5 rounded-full bg-brand"></span>
+                Why choose us
+              </span>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.05s">
+              <h2 class="mt-5 text-4xl leading-[1.05] font-bold tracking-tight text-balance sm:text-5xl">
+                Why Clients Love Working With Us
+              </h2>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.1s">
+              <p class="mt-4 text-lg text-muted-foreground text-pretty">
+                Almost every company wants AI today. We make it real — automation, intelligence and actionable insight that shows up in your P&amp;L.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="reveal" style="--reveal-delay: 0s">
+              <div class="glass gradient-ring lift-sm lift flex h-full flex-col rounded-3xl p-6">
+                <span class="check-pop bg-brand flex size-9 items-center justify-center rounded-xl shadow-glow opacity-0" style="--reveal-delay: 0.1s">
+                  <i data-lucide="check" class="size-4 text-primary-foreground" stroke-width="3"></i>
+                </span>
+                <h3 class="mt-5 text-base font-bold tracking-tight">Reduce manual work by up to 90%</h3>
+                <p class="mt-2 text-sm text-muted-foreground">Agents take over the repetitive 80% of your back office.</p>
+              </div>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.05s">
+              <div class="glass gradient-ring lift-sm lift flex h-full flex-col rounded-3xl p-6">
+                <span class="check-pop bg-brand flex size-9 items-center justify-center rounded-xl shadow-glow opacity-0" style="--reveal-delay: 0.15s">
+                  <i data-lucide="check" class="size-4 text-primary-foreground" stroke-width="3"></i>
+                </span>
+                <h3 class="mt-5 text-base font-bold tracking-tight">Save operational costs</h3>
+                <p class="mt-2 text-sm text-muted-foreground">Typical clients cut process cost by 35–65% in the first quarter.</p>
+              </div>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.1s">
+              <div class="glass gradient-ring lift-sm lift flex h-full flex-col rounded-3xl p-6">
+                <span class="check-pop bg-brand flex size-9 items-center justify-center rounded-xl shadow-glow opacity-0" style="--reveal-delay: 0.2s">
+                  <i data-lucide="check" class="size-4 text-primary-foreground" stroke-width="3"></i>
+                </span>
+                <h3 class="mt-5 text-base font-bold tracking-tight">Improve customer satisfaction</h3>
+                <p class="mt-2 text-sm text-muted-foreground">Sub-second responses across chat, email and voice.</p>
+              </div>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.15s">
+              <div class="glass gradient-ring lift-sm lift flex h-full flex-col rounded-3xl p-6">
+                <span class="check-pop bg-brand flex size-9 items-center justify-center rounded-xl shadow-glow opacity-0" style="--reveal-delay: 0.25s">
+                  <i data-lucide="check" class="size-4 text-primary-foreground" stroke-width="3"></i>
+                </span>
+                <h3 class="mt-5 text-base font-bold tracking-tight">24/7 AI availability</h3>
+                <p class="mt-2 text-sm text-muted-foreground">No queues, no shifts, no dropped conversations.</p>
+              </div>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.2s">
+              <div class="glass gradient-ring lift-sm lift flex h-full flex-col rounded-3xl p-6">
+                <span class="check-pop bg-brand flex size-9 items-center justify-center rounded-xl shadow-glow opacity-0" style="--reveal-delay: 0.3s">
+                  <i data-lucide="check" class="size-4 text-primary-foreground" stroke-width="3"></i>
+                </span>
+                <h3 class="mt-5 text-base font-bold tracking-tight">Enterprise-grade security</h3>
+                <p class="mt-2 text-sm text-muted-foreground">SOC 2 aligned, SSO, RBAC, private model deployments.</p>
+              </div>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.25s">
+              <div class="glass gradient-ring lift-sm lift flex h-full flex-col rounded-3xl p-6">
+                <span class="check-pop bg-brand flex size-9 items-center justify-center rounded-xl shadow-glow opacity-0" style="--reveal-delay: 0.35s">
+                  <i data-lucide="check" class="size-4 text-primary-foreground" stroke-width="3"></i>
+                </span>
+                <h3 class="mt-5 text-base font-bold tracking-tight">Rapid implementation</h3>
+                <p class="mt-2 text-sm text-muted-foreground">First automation live in 14 days, not 6 months.</p>
+              </div>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.3s">
+              <div class="glass gradient-ring lift-sm lift flex h-full flex-col rounded-3xl p-6">
+                <span class="check-pop bg-brand flex size-9 items-center justify-center rounded-xl shadow-glow opacity-0" style="--reveal-delay: 0.4s">
+                  <i data-lucide="check" class="size-4 text-primary-foreground" stroke-width="3"></i>
+                </span>
+                <h3 class="mt-5 text-base font-bold tracking-tight">Scalable architecture</h3>
+                <p class="mt-2 text-sm text-muted-foreground">From 10 to 10 million tasks without a rebuild.</p>
+              </div>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.35s">
+              <div class="glass gradient-ring lift-sm lift flex h-full flex-col rounded-3xl p-6">
+                <span class="check-pop bg-brand flex size-9 items-center justify-center rounded-xl shadow-glow opacity-0" style="--reveal-delay: 0.45s">
+                  <i data-lucide="check" class="size-4 text-primary-foreground" stroke-width="3"></i>
+                </span>
+                <h3 class="mt-5 text-base font-bold tracking-tight">Latest AI technologies</h3>
+                <p class="mt-2 text-sm text-muted-foreground">Frontier models, evaluated and swapped as they improve.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== INTERACTIVE DEMO ========== -->
+      <section id="demo" class="relative py-24">
+        <div class="relative mx-auto max-w-7xl px-5">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="reveal">
+              <span class="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-muted-foreground">
+                <span class="size-1.5 rounded-full bg-brand"></span>
+                Interactive demo
+              </span>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.05s">
+              <h2 class="mt-5 text-4xl leading-[1.05] font-bold tracking-tight text-balance sm:text-5xl">
+                See An AI Agent Work, Right Now
+              </h2>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.1s">
+              <p class="mt-4 text-lg text-muted-foreground text-pretty">
+                Pick a scenario and watch how an agent reasons, acts across your tools and closes the loop.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal mt-14">
+            <div class="glass mx-auto max-w-4xl rounded-3xl p-3 sm:p-5">
+              <div class="flex flex-wrap gap-2">
+                <button type="button" data-scenario="0" class="btn btn-glass btn-sm">Support triage</button>
+                <button type="button" data-scenario="1" class="btn btn-glass btn-sm">Lead qualification</button>
+                <button type="button" data-scenario="2" class="btn btn-glass btn-sm">Document AI</button>
+              </div>
+
+              <div class="mt-4 min-h-[16rem] space-y-3 rounded-2xl bg-background/40 p-4">
+                <div id="demo-empty" class="flex h-56 flex-col items-center justify-center gap-3 text-center text-muted-foreground">
+                  <i data-lucide="bot" class="size-8 text-primary"></i>
+                  <p class="text-sm">Choose a scenario above to start the simulation.</p>
+                </div>
+                <div id="demo-messages" class="space-y-3"></div>
+                <div id="demo-thinking" class="hidden flex items-center gap-2 text-sm text-muted-foreground">
+                  <i data-lucide="loader-2" class="size-4 animate-spin text-primary"></i>
+                  Agent is reasoning and calling your tools…
+                </div>
+              </div>
+
+              <div class="mt-3 flex items-center gap-2 rounded-2xl bg-background/40 px-4 py-3 text-sm text-muted-foreground">
+                <span class="flex-1 truncate">Ask your own question in a live pilot…</span>
+                <i data-lucide="send" class="size-4 text-primary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== DASHBOARD ========== -->
+      <section id="dashboard" class="relative py-24">
+        <div
+          aria-hidden="true"
+          class="bg-brand pointer-events-none absolute top-1/3 left-1/2 size-[40rem] -translate-x-1/2 rounded-full opacity-[0.10] blur-[140px]"
+        ></div>
+        <div class="relative mx-auto max-w-7xl px-5">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="reveal">
+              <span class="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-muted-foreground">
+                <span class="size-1.5 rounded-full bg-brand"></span>
+                Dashboard preview
+              </span>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.05s">
+              <h2 class="mt-5 text-4xl leading-[1.05] font-bold tracking-tight text-balance sm:text-5xl">
+                Every Automation, Measured In Real Time
+              </h2>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.1s">
+              <p class="mt-4 text-lg text-muted-foreground text-pretty">
+                Live visibility into throughput, savings and agent quality — no black boxes.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal mt-14">
+            <div class="glass rounded-3xl p-4 sm:p-6">
+              <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="reveal glass-soft rounded-2xl p-4" style="--reveal-delay: 0s">
+                  <i data-lucide="zap" class="size-4 text-primary"></i>
+                  <p class="mt-3 text-2xl font-bold tracking-tight">
+                    <span data-counter data-to="11200" data-suffix="+">0+</span>
+                  </p>
+                  <p class="text-xs text-muted-foreground">Tasks automated</p>
+                </div>
+                <div class="reveal glass-soft rounded-2xl p-4" style="--reveal-delay: 0.07s">
+                  <i data-lucide="clock" class="size-4 text-primary"></i>
+                  <p class="mt-3 text-2xl font-bold tracking-tight">
+                    <span data-counter data-to="3480">0</span>
+                  </p>
+                  <p class="text-xs text-muted-foreground">Hours saved / mo</p>
+                </div>
+                <div class="reveal glass-soft rounded-2xl p-4" style="--reveal-delay: 0.14s">
+                  <i data-lucide="activity" class="size-4 text-primary"></i>
+                  <p class="mt-3 text-2xl font-bold tracking-tight">
+                    <span data-counter data-to="99.2" data-decimals="1" data-suffix="%">0%</span>
+                  </p>
+                  <p class="text-xs text-muted-foreground">Agent accuracy</p>
+                </div>
+                <div class="reveal glass-soft rounded-2xl p-4" style="--reveal-delay: 0.21s">
+                  <i data-lucide="arrow-up-right" class="size-4 text-primary"></i>
+                  <p class="mt-3 text-2xl font-bold tracking-tight">
+                    <span data-counter data-to="47" data-suffix="%">0%</span>
+                  </p>
+                  <p class="text-xs text-muted-foreground">Cost reduction</p>
+                </div>
+              </div>
+
+              <div class="mt-4 grid gap-4 lg:grid-cols-3">
+                <div class="glass-soft rounded-2xl p-4 lg:col-span-2">
+                  <p class="text-sm font-semibold">Automated tasks per month</p>
+                  <div class="chart-wrap mt-4 h-56">
+                    <canvas id="chart-area"></canvas>
+                  </div>
+                </div>
+                <div class="glass-soft rounded-2xl p-4">
+                  <p class="text-sm font-semibold">Workload split</p>
+                  <div class="chart-wrap mt-2 h-56">
+                    <canvas id="chart-pie"></canvas>
+                  </div>
+                </div>
+                <div class="glass-soft rounded-2xl p-4 lg:col-span-3">
+                  <p class="text-sm font-semibold">Hours saved per day</p>
+                  <div class="chart-wrap mt-4 h-40">
+                    <canvas id="chart-bar"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== WORKFLOW / INDUSTRIES ========== -->
+      <section id="workflow" class="relative py-24">
+        <div id="industries" class="relative mx-auto max-w-7xl px-5">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="reveal">
+              <span class="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-muted-foreground">
+                <span class="size-1.5 rounded-full bg-brand"></span>
+                Workflow automation
+              </span>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.05s">
+              <h2 class="mt-5 text-4xl leading-[1.05] font-bold tracking-tight text-balance sm:text-5xl">
+                From Raw Input To Finished Outcome
+              </h2>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.1s">
+              <p class="mt-4 text-lg text-muted-foreground text-pretty">
+                A single connected pipeline replaces the copy-paste chain between your teams and tools.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative mt-16">
+            <div aria-hidden="true" class="bg-brand absolute top-8 right-0 left-0 hidden h-px opacity-40 lg:block"></div>
+            <div class="grid gap-4 lg:grid-cols-5">
+              <div class="reveal" style="--reveal-delay: 0s">
+                <div class="glass relative h-full rounded-3xl p-6">
+                  <span class="workflow-icon bg-brand grid size-12 place-items-center rounded-2xl text-primary-foreground">
+                    <i data-lucide="inbox" class="size-5"></i>
+                  </span>
+                  <p class="mt-5 text-xs font-semibold tracking-widest text-primary uppercase">Step 1</p>
+                  <h3 class="mt-1 text-lg font-semibold">Capture</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Emails, forms, tickets, calls, PDFs and API events land in one intake.</p>
+                </div>
+              </div>
+              <div class="reveal" style="--reveal-delay: 0.08s">
+                <div class="glass relative h-full rounded-3xl p-6">
+                  <span class="workflow-icon bg-brand grid size-12 place-items-center rounded-2xl text-primary-foreground">
+                    <i data-lucide="brain-circuit" class="size-5"></i>
+                  </span>
+                  <p class="mt-5 text-xs font-semibold tracking-widest text-primary uppercase">Step 2</p>
+                  <h3 class="mt-1 text-lg font-semibold">Understand</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Agents classify intent, extract data and enrich from your systems.</p>
+                </div>
+              </div>
+              <div class="reveal" style="--reveal-delay: 0.16s">
+                <div class="glass relative h-full rounded-3xl p-6">
+                  <span class="workflow-icon bg-brand grid size-12 place-items-center rounded-2xl text-primary-foreground">
+                    <i data-lucide="workflow" class="size-5"></i>
+                  </span>
+                  <p class="mt-5 text-xs font-semibold tracking-widest text-primary uppercase">Step 3</p>
+                  <h3 class="mt-1 text-lg font-semibold">Orchestrate</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Multi-step workflows route work across tools with human-in-the-loop gates.</p>
+                </div>
+              </div>
+              <div class="reveal" style="--reveal-delay: 0.24s">
+                <div class="glass relative h-full rounded-3xl p-6">
+                  <span class="workflow-icon bg-brand grid size-12 place-items-center rounded-2xl text-primary-foreground">
+                    <i data-lucide="check-circle-2" class="size-5"></i>
+                  </span>
+                  <p class="mt-5 text-xs font-semibold tracking-widest text-primary uppercase">Step 4</p>
+                  <h3 class="mt-1 text-lg font-semibold">Execute</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Actions are written back to CRM, ERP, helpdesk and billing automatically.</p>
+                </div>
+              </div>
+              <div class="reveal" style="--reveal-delay: 0.32s">
+                <div class="glass relative h-full rounded-3xl p-6">
+                  <span class="workflow-icon bg-brand grid size-12 place-items-center rounded-2xl text-primary-foreground">
+                    <i data-lucide="bar-chart-3" class="size-5"></i>
+                  </span>
+                  <p class="mt-5 text-xs font-semibold tracking-widest text-primary uppercase">Step 5</p>
+                  <h3 class="mt-1 text-lg font-semibold">Learn</h3>
+                  <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Every run is evaluated and fed back to raise accuracy over time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal mt-8" style="--reveal-delay: 0.2s">
+            <div class="glass flex flex-wrap items-center justify-center gap-x-8 gap-y-3 rounded-3xl px-6 py-5 text-sm text-muted-foreground">
+              <span class="font-semibold text-foreground">200+ integrations</span>
+              <span>Salesforce</span>
+              <span>HubSpot</span>
+              <span>Slack</span>
+              <span>Zendesk</span>
+              <span>SAP</span>
+              <span>Notion</span>
+              <span>Stripe</span>
+              <span>Google Workspace</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== PRICING ========== -->
+      <section id="pricing" class="relative py-24">
+        <div class="relative mx-auto max-w-7xl px-5">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="reveal">
+              <span class="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-muted-foreground">
+                <span class="size-1.5 rounded-full bg-brand"></span>
+                Pricing calculator
+              </span>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.05s">
+              <h2 class="mt-5 text-4xl leading-[1.05] font-bold tracking-tight text-balance sm:text-5xl">
+                Transparent Pricing, Built On Your Volume
+              </h2>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.1s">
+              <p class="mt-4 text-lg text-muted-foreground text-pretty">
+                Move the sliders to model your monthly investment and the operational savings behind it.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal mt-14">
+            <div class="glass grid gap-8 rounded-3xl p-6 sm:p-8 lg:grid-cols-[1.15fr_0.85fr]">
+              <div class="space-y-8">
+                <div>
+                  <div class="flex items-baseline justify-between">
+                    <span class="text-sm font-medium">AI workflows</span>
+                    <span id="val-workflows" class="text-sm font-semibold text-primary">4</span>
+                  </div>
+                  <input id="range-workflows" class="range" type="range" min="1" max="20" value="4" step="1" />
+                </div>
+                <div>
+                  <div class="flex items-baseline justify-between">
+                    <span class="text-sm font-medium">Tasks per month</span>
+                    <span id="val-tasks" class="text-sm font-semibold text-primary">25k</span>
+                  </div>
+                  <input id="range-tasks" class="range" type="range" min="5" max="200" value="25" step="1" />
+                </div>
+                <div>
+                  <div class="flex items-baseline justify-between">
+                    <span class="text-sm font-medium">Team seats</span>
+                    <span id="val-seats" class="text-sm font-semibold text-primary">15</span>
+                  </div>
+                  <input id="range-seats" class="range" type="range" min="3" max="250" value="15" step="1" />
+                </div>
+                <div class="flex items-center gap-2">
+                  <button type="button" id="billing-annual" class="btn btn-hero btn-sm">Annual · save 18%</button>
+                  <button type="button" id="billing-monthly" class="btn btn-glass btn-sm">Monthly</button>
+                </div>
+              </div>
+
+              <div class="glass-soft flex flex-col justify-center rounded-2xl p-6 text-center">
+                <p class="text-xs font-semibold tracking-widest text-muted-foreground uppercase">Estimated monthly</p>
+                <p id="estimate" class="text-gradient mt-2 text-5xl font-bold tracking-tight">€0</p>
+                <p class="mt-3 text-sm text-muted-foreground">
+                  Projected operational savings of
+                  <span id="savings" class="font-semibold text-foreground">€0</span> per month.
+                </p>
+                <a href="#contact" class="btn btn-hero mt-6 w-full">Get an exact quote</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 grid gap-4 lg:grid-cols-3">
+            <div class="reveal" style="--reveal-delay: 0s">
+              <div class="glass relative h-full rounded-3xl p-7">
+                <h3 class="text-lg font-semibold">Starter</h3>
+                <p class="mt-1 text-sm text-muted-foreground">One process, fully automated.</p>
+                <p class="mt-5 text-3xl font-bold tracking-tight">
+                  €990<span class="text-sm font-normal text-muted-foreground">/mo</span>
+                </p>
+                <ul class="mt-6 space-y-3">
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>1 AI workflow</li>
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>5k tasks / month</li>
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>Email + chat channel</li>
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>Standard support</li>
+                </ul>
+                <a href="#contact" class="btn btn-glass mt-7 w-full">Start with Starter</a>
+              </div>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.08s">
+              <div class="glass relative h-full rounded-3xl p-7 ring-2 ring-primary/60">
+                <span class="bg-brand absolute -top-3 left-7 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold text-primary-foreground">
+                  <i data-lucide="sparkle" class="size-3"></i> Most popular
+                </span>
+                <h3 class="text-lg font-semibold">Growth</h3>
+                <p class="mt-1 text-sm text-muted-foreground">A team of agents across departments.</p>
+                <p class="mt-5 text-3xl font-bold tracking-tight">
+                  €2,490<span class="text-sm font-normal text-muted-foreground">/mo</span>
+                </p>
+                <ul class="mt-6 space-y-3">
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>Up to 6 AI workflows</li>
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>50k tasks / month</li>
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>Voice + document AI</li>
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>Dedicated success manager</li>
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>Custom integrations</li>
+                </ul>
+                <a href="#contact" class="btn btn-hero mt-7 w-full">Start with Growth</a>
+              </div>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.16s">
+              <div class="glass relative h-full rounded-3xl p-7">
+                <h3 class="text-lg font-semibold">Enterprise</h3>
+                <p class="mt-1 text-sm text-muted-foreground">Private, governed, unlimited scale.</p>
+                <p class="mt-5 text-3xl font-bold tracking-tight">
+                  €5,900<span class="text-sm font-normal text-muted-foreground">/mo</span>
+                </p>
+                <ul class="mt-6 space-y-3">
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>Unlimited workflows</li>
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>Unlimited tasks</li>
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>Private model deployment</li>
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>SSO, RBAC, audit logs</li>
+                  <li class="flex items-start gap-2 text-sm text-muted-foreground"><i data-lucide="check" class="mt-0.5 size-4 shrink-0 text-primary"></i>24/7 SLA</li>
+                </ul>
+                <a href="#contact" class="btn btn-glass mt-7 w-full">Start with Enterprise</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== TESTIMONIALS / BLOG ANCHOR ========== -->
+      <section id="testimonials" class="relative py-24">
+        <div id="blog" aria-hidden="true" class="absolute top-0"></div>
+        <div
+          aria-hidden="true"
+          class="bg-brand pointer-events-none absolute top-1/2 left-1/2 size-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[0.10] blur-[130px]"
+        ></div>
+        <div class="relative mx-auto max-w-7xl px-5">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="reveal">
+              <span class="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-muted-foreground">
+                <span class="size-1.5 rounded-full bg-brand"></span>
+                Testimonials
+              </span>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.05s">
+              <h2 class="mt-5 text-4xl leading-[1.05] font-bold tracking-tight text-balance sm:text-5xl">
+                Trusted By Operators, Not Just Innovation Teams
+              </h2>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.1s">
+              <p class="mt-4 text-lg text-muted-foreground text-pretty">
+                The people running the process are the ones who feel the difference first.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-14 grid gap-4 md:grid-cols-2">
+            <div class="reveal" style="--reveal-delay: 0s">
+              <figure class="glass lift-sm lift h-full rounded-3xl p-7">
+                <div class="flex items-center justify-between">
+                  <i data-lucide="quote" class="size-6 text-primary"></i>
+                  <div class="flex gap-0.5 text-primary">
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                  </div>
+                </div>
+                <blockquote class="mt-5 text-base leading-relaxed text-pretty">
+                  We replaced a five-person manual triage process with two agents. Response time went from 9 hours to under a minute and nobody lost their job — they moved to higher value work.
+                </blockquote>
+                <figcaption class="mt-6 flex items-center gap-3">
+                  <span class="bg-brand grid size-10 place-items-center rounded-full text-sm font-semibold text-primary-foreground">EV</span>
+                  <span>
+                    <span class="block text-sm font-semibold">Elena Vasquez</span>
+                    <span class="block text-xs text-muted-foreground">COO, Nordwind Logistics</span>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.07s">
+              <figure class="glass lift-sm lift h-full rounded-3xl p-7">
+                <div class="flex items-center justify-between">
+                  <i data-lucide="quote" class="size-6 text-primary"></i>
+                  <div class="flex gap-0.5 text-primary">
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                  </div>
+                </div>
+                <blockquote class="mt-5 text-base leading-relaxed text-pretty">
+                  The pilot paid for itself in 6 weeks. What impressed me most was the governance: every action is logged and reviewable.
+                </blockquote>
+                <figcaption class="mt-6 flex items-center gap-3">
+                  <span class="bg-brand grid size-10 place-items-center rounded-full text-sm font-semibold text-primary-foreground">MF</span>
+                  <span>
+                    <span class="block text-sm font-semibold">Marcus Feld</span>
+                    <span class="block text-xs text-muted-foreground">CTO, Helvetia FinServe</span>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.14s">
+              <figure class="glass lift-sm lift h-full rounded-3xl p-7">
+                <div class="flex items-center justify-between">
+                  <i data-lucide="quote" class="size-6 text-primary"></i>
+                  <div class="flex gap-0.5 text-primary">
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                  </div>
+                </div>
+                <blockquote class="mt-5 text-base leading-relaxed text-pretty">
+                  They understood our operations before touching a model. That's rare in AI consulting and it's why the rollout actually stuck.
+                </blockquote>
+                <figcaption class="mt-6 flex items-center gap-3">
+                  <span class="bg-brand grid size-10 place-items-center rounded-full text-sm font-semibold text-primary-foreground">PR</span>
+                  <span>
+                    <span class="block text-sm font-semibold">Priya Raman</span>
+                    <span class="block text-xs text-muted-foreground">VP Customer Experience, Lumora</span>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.21s">
+              <figure class="glass lift-sm lift h-full rounded-3xl p-7">
+                <div class="flex items-center justify-between">
+                  <i data-lucide="quote" class="size-6 text-primary"></i>
+                  <div class="flex gap-0.5 text-primary">
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                    <i data-lucide="star" class="size-4 fill-current"></i>
+                  </div>
+                </div>
+                <blockquote class="mt-5 text-base leading-relaxed text-pretty">
+                  Document automation now handles 40k supplier invoices a month at 99.4% accuracy. Our finance team finally closes the month on time.
+                </blockquote>
+                <figcaption class="mt-6 flex items-center gap-3">
+                  <span class="bg-brand grid size-10 place-items-center rounded-full text-sm font-semibold text-primary-foreground">TB</span>
+                  <span>
+                    <span class="block text-sm font-semibold">Tom Bergstrom</span>
+                    <span class="block text-xs text-muted-foreground">Head of Finance Ops, Kastel Group</span>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CASE STUDIES ========== -->
+      <section id="case-studies" class="relative py-24">
+        <div class="relative mx-auto max-w-7xl px-5">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="reveal">
+              <span class="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-muted-foreground">
+                <span class="size-1.5 rounded-full bg-brand"></span>
+                Case studies
+              </span>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.05s">
+              <h2 class="mt-5 text-4xl leading-[1.05] font-bold tracking-tight text-balance sm:text-5xl">
+                Real Deployments, Real Numbers
+              </h2>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.1s">
+              <p class="mt-4 text-lg text-muted-foreground text-pretty">
+                Selected engagements where automation moved a hard business metric.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-14 grid gap-4 lg:grid-cols-3">
+            <div class="reveal" style="--reveal-delay: 0s">
+              <article class="glass group lift h-full overflow-hidden rounded-3xl p-7">
+                <div class="flex items-center justify-between">
+                  <span class="glass-soft rounded-full px-3 py-1 text-xs font-semibold tracking-wide text-primary uppercase">Insurance</span>
+                  <i data-lucide="arrow-up-right" class="case-arrow size-5 text-muted-foreground"></i>
+                </div>
+                <h3 class="mt-5 text-xl leading-snug font-semibold text-balance">Claims triage cut from 3 days to 20 minutes</h3>
+                <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  A multi-agent pipeline reads claim documents, validates policy coverage and routes exceptions to adjusters with a recommendation attached.
+                </p>
+                <div class="mt-6 grid grid-cols-2 gap-3">
+                  <div class="glass-soft rounded-2xl p-4">
+                    <p class="text-gradient text-2xl font-bold tracking-tight">
+                      <span data-counter data-to="92" data-suffix="%">0%</span>
+                    </p>
+                    <p class="mt-1 text-xs text-muted-foreground">Auto-handled claims</p>
+                  </div>
+                  <div class="glass-soft rounded-2xl p-4">
+                    <p class="text-gradient text-2xl font-bold tracking-tight">
+                      <span data-counter data-to="3.4" data-decimals="1" data-suffix="M€">0M€</span>
+                    </p>
+                    <p class="mt-1 text-xs text-muted-foreground">Annual savings</p>
+                  </div>
+                </div>
+                <p class="mt-5 inline-flex items-center gap-2 text-xs font-medium text-primary">
+                  <i data-lucide="trending-up" class="size-3.5"></i> Verified post-deployment
+                </p>
+              </article>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.08s">
+              <article class="glass group lift h-full overflow-hidden rounded-3xl p-7">
+                <div class="flex items-center justify-between">
+                  <span class="glass-soft rounded-full px-3 py-1 text-xs font-semibold tracking-wide text-primary uppercase">E-commerce</span>
+                  <i data-lucide="arrow-up-right" class="case-arrow size-5 text-muted-foreground"></i>
+                </div>
+                <h3 class="mt-5 text-xl leading-snug font-semibold text-balance">24/7 support agent handling 11 languages</h3>
+                <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  Order lookups, refunds and returns resolved end-to-end inside the helpdesk, with escalation to humans only for edge cases.
+                </p>
+                <div class="mt-6 grid grid-cols-2 gap-3">
+                  <div class="glass-soft rounded-2xl p-4">
+                    <p class="text-gradient text-2xl font-bold tracking-tight">
+                      <span data-counter data-to="78" data-suffix="%">0%</span>
+                    </p>
+                    <p class="mt-1 text-xs text-muted-foreground">Ticket deflection</p>
+                  </div>
+                  <div class="glass-soft rounded-2xl p-4">
+                    <p class="text-gradient text-2xl font-bold tracking-tight">
+                      <span data-counter data-to="4.9" data-decimals="1" data-suffix="/5">0/5</span>
+                    </p>
+                    <p class="mt-1 text-xs text-muted-foreground">CSAT after rollout</p>
+                  </div>
+                </div>
+                <p class="mt-5 inline-flex items-center gap-2 text-xs font-medium text-primary">
+                  <i data-lucide="trending-up" class="size-3.5"></i> Verified post-deployment
+                </p>
+              </article>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.16s">
+              <article class="glass group lift h-full overflow-hidden rounded-3xl p-7">
+                <div class="flex items-center justify-between">
+                  <span class="glass-soft rounded-full px-3 py-1 text-xs font-semibold tracking-wide text-primary uppercase">Manufacturing</span>
+                  <i data-lucide="arrow-up-right" class="case-arrow size-5 text-muted-foreground"></i>
+                </div>
+                <h3 class="mt-5 text-xl leading-snug font-semibold text-balance">Procurement documents structured automatically</h3>
+                <p class="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  40k supplier documents per month parsed into an auditable data layer that feeds ERP and spend analytics.
+                </p>
+                <div class="mt-6 grid grid-cols-2 gap-3">
+                  <div class="glass-soft rounded-2xl p-4">
+                    <p class="text-gradient text-2xl font-bold tracking-tight">
+                      <span data-counter data-to="99.4" data-decimals="1" data-suffix="%">0%</span>
+                    </p>
+                    <p class="mt-1 text-xs text-muted-foreground">Extraction accuracy</p>
+                  </div>
+                  <div class="glass-soft rounded-2xl p-4">
+                    <p class="text-gradient text-2xl font-bold tracking-tight">
+                      <span data-counter data-to="3480" data-suffix="h">0h</span>
+                    </p>
+                    <p class="mt-1 text-xs text-muted-foreground">Hours saved / year</p>
+                  </div>
+                </div>
+                <p class="mt-5 inline-flex items-center gap-2 text-xs font-medium text-primary">
+                  <i data-lucide="trending-up" class="size-3.5"></i> Verified post-deployment
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CONTACT ========== -->
+      <section id="contact" class="relative py-24">
+        <div
+          aria-hidden="true"
+          class="bg-brand pointer-events-none absolute bottom-0 left-1/2 size-[36rem] -translate-x-1/2 rounded-full opacity-[0.12] blur-[140px]"
+        ></div>
+        <div class="relative mx-auto max-w-7xl px-5">
+          <div class="mx-auto max-w-3xl text-center">
+            <div class="reveal">
+              <span class="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-muted-foreground">
+                <span class="size-1.5 rounded-full bg-brand"></span>
+                Contact
+              </span>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.05s">
+              <h2 class="mt-5 text-4xl leading-[1.05] font-bold tracking-tight text-balance sm:text-5xl">
+                Let's Map Your First Automation
+              </h2>
+            </div>
+            <div class="reveal" style="--reveal-delay: 0.1s">
+              <p class="mt-4 text-lg text-muted-foreground text-pretty">
+                Tell us about the process that hurts most. We'll come back with a concrete plan within one business day.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal mt-14">
+            <div class="glass grid gap-8 rounded-3xl p-6 sm:p-8 lg:grid-cols-[0.85fr_1.15fr]">
+              <div class="space-y-6">
+                <p class="text-sm leading-relaxed text-muted-foreground">
+                  Book a 30-minute discovery call. No slide decks — we look at your workflow and estimate the automation potential live.
+                </p>
+                <ul class="space-y-4">
+                  <li class="flex items-center gap-3 text-sm">
+                    <span class="glass-soft grid size-10 place-items-center rounded-xl text-primary">
+                      <i data-lucide="mail" class="size-4"></i>
+                    </span>
+                    hello@neuroflow.ai
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span class="glass-soft grid size-10 place-items-center rounded-xl text-primary">
+                      <i data-lucide="phone" class="size-4"></i>
+                    </span>
+                    +49 30 5555 8100
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span class="glass-soft grid size-10 place-items-center rounded-xl text-primary">
+                      <i data-lucide="map-pin" class="size-4"></i>
+                    </span>
+                    Berlin · Zurich · Remote
+                  </li>
+                </ul>
+                <div class="glass-soft rounded-2xl p-4 text-xs text-muted-foreground">
+                  Typical first automation goes live in 14 days. Pilots are fixed-scope and fixed-price.
+                </div>
+              </div>
+
+              <div id="contact-done" class="glass-soft hidden flex flex-col items-center justify-center gap-3 rounded-2xl p-10 text-center">
+                <i data-lucide="check-circle-2" class="size-10 text-primary"></i>
+                <p class="text-lg font-semibold">Thanks — request received</p>
+                <p class="text-sm text-muted-foreground">We'll reply within one business day with next steps.</p>
+              </div>
+
+              <form id="contact-form" class="glass-soft grid gap-4 rounded-2xl p-6 sm:grid-cols-2">
+                <div class="grid gap-2">
+                  <label class="label" for="name">Name</label>
+                  <input class="input" id="name" required placeholder="Alex Berger" />
+                </div>
+                <div class="grid gap-2">
+                  <label class="label" for="email">Work email</label>
+                  <input class="input" id="email" type="email" required placeholder="alex@company.com" />
+                </div>
+                <div class="grid gap-2">
+                  <label class="label" for="company">Company</label>
+                  <input class="input" id="company" placeholder="Company GmbH" />
+                </div>
+                <div class="grid gap-2">
+                  <label class="label" for="budget">Monthly budget</label>
+                  <input class="input" id="budget" placeholder="€2,000 – €10,000" />
+                </div>
+                <div class="grid gap-2 sm:col-span-2">
+                  <label class="label" for="message">Which process should we automate?</label>
+                  <textarea class="textarea" id="message" rows="4" required placeholder="We handle ~1,200 support tickets a week…"></textarea>
+                </div>
+                <button type="submit" class="btn btn-hero sm:col-span-2">
+                  Request my automation plan <i data-lucide="send" class="size-4"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="relative border-t border-border/60 py-14">
+      <div class="mx-auto max-w-7xl px-5">
+        <div class="grid gap-10 lg:grid-cols-[1.3fr_2fr]">
+          <div>
+            <a href="#top" class="flex items-center gap-2">
+              <span class="bg-brand grid size-9 place-items-center rounded-xl text-sm font-bold text-primary-foreground">N</span>
+              <span class="text-lg font-semibold tracking-tight">Neuroflow</span>
+            </a>
+            <p class="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
+              We design, build and operate AI automation systems that pay for themselves — for teams that need outcomes, not experiments.
+            </p>
+            <div class="mt-5 flex gap-2">
+              <a href="#" aria-label="Twitter" class="glass-soft grid size-9 place-items-center rounded-xl text-muted-foreground transition-colors hover:text-primary">
+                <i data-lucide="twitter" class="size-4"></i>
+              </a>
+              <a href="#" aria-label="LinkedIn" class="glass-soft grid size-9 place-items-center rounded-xl text-muted-foreground transition-colors hover:text-primary">
+                <i data-lucide="linkedin" class="size-4"></i>
+              </a>
+              <a href="#" aria-label="GitHub" class="glass-soft grid size-9 place-items-center rounded-xl text-muted-foreground transition-colors hover:text-primary">
+                <i data-lucide="github" class="size-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="grid gap-8 sm:grid-cols-3">
+            <div>
+              <p class="text-sm font-semibold">Solutions</p>
+              <ul class="mt-4 space-y-2.5">
+                <li><a href="#solutions" class="text-sm text-muted-foreground transition-colors hover:text-primary">AI Chatbots</a></li>
+                <li><a href="#solutions" class="text-sm text-muted-foreground transition-colors hover:text-primary">AI Agents</a></li>
+                <li><a href="#workflow" class="text-sm text-muted-foreground transition-colors hover:text-primary">Workflow Automation</a></li>
+                <li><a href="#solutions" class="text-sm text-muted-foreground transition-colors hover:text-primary">Document AI</a></li>
+                <li><a href="#solutions" class="text-sm text-muted-foreground transition-colors hover:text-primary">Voice AI</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-sm font-semibold">Company</p>
+              <ul class="mt-4 space-y-2.5">
+                <li><a href="#about" class="text-sm text-muted-foreground transition-colors hover:text-primary">About</a></li>
+                <li><a href="#case-studies" class="text-sm text-muted-foreground transition-colors hover:text-primary">Case Studies</a></li>
+                <li><a href="#contact" class="text-sm text-muted-foreground transition-colors hover:text-primary">Careers</a></li>
+                <li><a href="#blog" class="text-sm text-muted-foreground transition-colors hover:text-primary">Blog</a></li>
+                <li><a href="#contact" class="text-sm text-muted-foreground transition-colors hover:text-primary">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-sm font-semibold">Resources</p>
+              <ul class="mt-4 space-y-2.5">
+                <li><a href="#demo" class="text-sm text-muted-foreground transition-colors hover:text-primary">Documentation</a></li>
+                <li><a href="#about" class="text-sm text-muted-foreground transition-colors hover:text-primary">Security</a></li>
+                <li><a href="#workflow" class="text-sm text-muted-foreground transition-colors hover:text-primary">Integrations</a></li>
+                <li><a href="#pricing" class="text-sm text-muted-foreground transition-colors hover:text-primary">Pricing</a></li>
+                <li><a href="#dashboard" class="text-sm text-muted-foreground transition-colors hover:text-primary">Status</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 flex flex-col items-center justify-between gap-3 border-t border-border/60 pt-6 text-xs text-muted-foreground sm:flex-row">
+          <p>
+            © <span id="year">2026</span> Neuroflow. All rights reserved.
+            <span class="mx-2 hidden opacity-40 sm:inline">|</span>
+            <span class="block sm:inline">Designed by Mind Blowing Technologies.</span>
+          </p>
+          <div class="flex gap-5">
+            <a href="#" class="hover:text-primary">Privacy</a>
+            <a href="#" class="hover:text-primary">Terms</a>
+            <a href="#" class="hover:text-primary">DPA</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@0.575.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
